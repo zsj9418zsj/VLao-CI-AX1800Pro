@@ -43,11 +43,11 @@ jobs:
       #默认主题
       WRT_THEME: argon
       #默认主机名
-      WRT_NAME: OpenWrt
+      WRT_NAME: JDCAX1800
       #默认WIFI名
-      WRT_WIFI: JDCwifi_90E1
+      WRT_WIFI: JDC-AX1800-Pro
       #默认地址
-      WRT_IP: 192.168.68.1
+      WRT_IP: 192.168.3.18
       #默认密码，仅作提示，修改无用
       WRT_PW: 无
       #源码链接
