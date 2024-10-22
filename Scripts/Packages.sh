@@ -37,6 +37,20 @@ UPDATE_PACKAGE "luci-app-gecoosac" "lwb1978/openwrt-gecoosac" "main"
 UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
 UPDATE_PACKAGE "luci-app-wolplus" "VIKINGYFY/luci-app-wolplus" "main"
 
+#自添加
+UPDATE_PACKAGE "pushbot" "zzsj0928/luci-app-pushbot" "master"
+UPDATE_PACKAGE "parentcontrol" "363137946/luci-app-parentcontrol" "main"
+
+if [[ $WRT_REPO == *"lede"* ]]; then
+	UPDATE_PACKAGE "daed" "QiuSimons/luci-app-daed" "master"
+	UPDATE_PACKAGE "homeproxy" "VIKINGYFY/homeproxy" "main"
+	UPDATE_PACKAGE "mihomo" "morytyann/OpenWrt-mihomo" "main" "pkg"
+
+	UPDATE_PACKAGE "alpha" "derisamedia/luci-theme-alpha" "master"
+	UPDATE_PACKAGE "alpha-config" "animegasan/luci-app-alpha-config" "master"
+fi
+
+
 # 添加iStore商店
 UPDATE_PACKAGE "nas-packages" "linkease/nas-packages" "master"
 UPDATE_PACKAGE "nas-packages-luci" "linkease/nas-packages-luci" "main"
